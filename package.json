@@ -1,0 +1,26 @@
+{
+    "name": "europalang-highlighter",
+    "displayName": "EuropaLang Highlighter",
+    "description": "Syntax highlighting for EuropaLang",
+    "version": "1.0.0",
+    "publisher": "19wintersp",
+    "engines": {
+        "vscode": "^1.58.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "europa",
+            "aliases": ["Europa", "europa"],
+            "extensions": [".eo",".europa"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "europa",
+            "scopeName": "source.europa",
+            "path": "./syntaxes/europa.tmLanguage.json"
+        }]
+    }
+}
