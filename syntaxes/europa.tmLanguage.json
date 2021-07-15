@@ -1,0 +1,99 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Europa",
+	"patterns": [
+		{ "include": "#comments" },
+		{ "include": "#constants" },
+		{ "include": "#keywords" },
+		{ "include": "#strings" },
+		{ "include": "#entities" }
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.europa",
+					"match": "\\b(if|elif|else|while|for|in|return|break|continue|fn|var|use)\\b"
+				},
+				{
+					"name": "keyword.operator.europa",
+					"match": "((\\+|\\-|\\*|\\/|\\*\\*|%)=?|=|==|=!|\\<|\\<=|\\>|\\>=|\\||\\bor\\b|\\&|\\band\\b|\\^|!)"
+				}
+			]
+		},
+		"strings": {
+			"patterns": [
+				{
+					"name": "string.quoted.double.europa",
+					"begin": "\"",
+					"end": "\"",
+					"patterns": [
+						{ "include": "#escapes" }
+					]
+				},
+				{
+					"name": "string.quoted.single.europa",
+					"begin": "'",
+					"end": "'",
+					"patterns": [
+						{ "include": "#escapes" }
+					]
+				}
+			]
+		},
+		"escapes": {
+			"patterns": [
+				{
+					"name": "constant.character.escape.europa",
+					"match": "\\\\([nrtabefv\\\\'\"\\?]|o[0-7]{3}|x[\\da-fA-F]{2}|u[\\da-fA-F]{4}|U[\\da-fA-F]{8})"
+				},
+				{
+					"name": "invalid.illegal.europa",
+					"match": "\\\\[^nrtabefv\\\\'\"\\?oxuU]"
+				}
+			]
+		},
+		"comments": {
+			"patterns": [
+				{
+					"name": "comment.block.europa",
+					"begin": "\\/\\*",
+					"end": "\\*\\/"
+				},
+				{
+					"name": "comment.line.europa",
+					"match": "\\/\\/.*$"
+				}
+			]
+		},
+		"entities": {
+			"patterns": [
+				{
+					"name": "entity.name.function.europa",
+					"match": "\\b[a-z]\\w*(?=\\()"
+				},
+				{
+					"name": "entity.name.class.europa",
+					"match": "\\b[A-Z]\\w*\\b"
+				},
+				{
+					"name": "variable.europa",
+					"match": "\\b[a-z]\\w*\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+					"name": "constant.language.europa",
+					"match": "(true|false|nil)"
+				},
+				{
+					"name": "constant.numeric.europa",
+					"match": "\\b[\\d_]+(\\.[\\d_]*)?\\b"
+				}
+			]
+		}
+	},
+	"scopeName": "source.europa"
+}
