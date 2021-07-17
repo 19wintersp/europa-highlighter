@@ -1,0 +1,40 @@
+{
+	"for": {
+		"prefix": "for",
+		"body": "for ${1:i} in ${2:arr} {\n\t${0}\n}",
+		"description": "For loop"
+	},
+	"while": {
+		"prefix": "while",
+		"body": "while ${1:condition} {\n\t${0}\n}",
+		"description": "While loop"
+	},
+	"do while": {
+		"prefix": "dowhile",
+		"body": "do {\n\t${0}\n} while ${1:condition};",
+		"description": "Do ... while ... loop"
+	},
+	"class": {
+		"prefix": "struct",
+		"body": "{{\n\t${0}\n}}",
+		"description": "Class declaration"
+	},
+	"function": {
+		"prefix": [
+			"fn",
+			"func",
+			"function"
+		],
+		"body": "fn ${1:name}(${2:args}) {\n\t${0}\n}",
+		"description": "Function declaration"
+	},
+	"if stmt": {
+		"prefix": "if",
+		"body": "if ${1:condition} {\n\t${2}\n} ${3:elif condition {\n\tcode\n}} ${4:else {\n\t\n}}",
+		"description": "If statement"
+	},
+	"lambda": {
+		"prefix": "lambda",
+		"body": "lmb (${1:arguments}) {\n\t${0}\n}"
+	}
+}

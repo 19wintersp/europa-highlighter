@@ -1,0 +1,8 @@
+fn main() {
+	// do stuff
+}
+
+do {
+
+} while false;
+
