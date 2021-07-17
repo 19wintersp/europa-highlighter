@@ -21,6 +21,12 @@
             "language": "europa",
             "scopeName": "source.europa",
             "path": "./syntaxes/europa.tmLanguage.json"
-        }]
+        }],
+		"snippets": [
+			{
+				"language": "europa",
+				"path": "./intellisense/snippets.json"
+			}
+		]
     }
 }
