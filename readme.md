@@ -16,3 +16,8 @@ Initial release
 
 Add `do` keyword and icon.
 Boolean comparators are now highlighted as keywords.
+
+### 1.2.0
+
+Add snippets.
+

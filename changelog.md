@@ -11,3 +11,8 @@ See *Releases* section of the Readme.
 - Added `do` keyword
 - Added icon
 - Included `or` and `and` as keywords
+
+## 1.2.0
+
+- Added snippets
+
