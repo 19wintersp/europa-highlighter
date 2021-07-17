@@ -3,6 +3,7 @@
     "displayName": "EuropaLang Highlighter",
     "description": "Syntax highlighting for EuropaLang",
     "version": "1.0.0",
+    "icon": "images/logo.png",
     "publisher": "19wintersp",
     "engines": {
         "vscode": "^1.58.0"
