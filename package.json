@@ -2,7 +2,7 @@
     "name": "europalang-highlighter",
     "displayName": "EuropaLang Highlighter",
     "description": "Syntax highlighting for EuropaLang",
-    "version": "1.0.0",
+    "version": "1.1.0",
     "icon": "images/logo.png",
     "publisher": "19wintersp",
     "engines": {
