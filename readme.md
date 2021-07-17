@@ -12,3 +12,7 @@
 
 Initial release
 
+### 1.1.0
+
+Add `do` keyword and icon.
+Boolean comparators are now highlighted as keywords.
